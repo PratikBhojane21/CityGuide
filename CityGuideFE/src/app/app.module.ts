@@ -1,0 +1,89 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HomeComponent } from './pages/home/home.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { authInterceptorProviders } from './services/auth.interceptor';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { MatListModule } from '@angular/material/list';
+import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
+import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { ViewschoolComponent } from './pages/admin/viewschool/viewschool.component';
+import { ViewuserschoolComponent } from './pages/user/viewuserschool/viewuserschool.component';
+import { AddschoolComponent } from './pages/admin/addschool/addschool.component';
+import { UpdateschoolComponent } from './pages/admin/updateschool/updateschool.component';
+import { UsersidebarComponent } from './pages/user/usersidebar/usersidebar.component';
+import { ViewhotelComponent } from './pages/admin/viewhotel/viewhotel.component';
+import { AddhotelComponent } from './pages/admin/addhotel/addhotel.component';
+import { UpdatehotelComponent } from './pages/admin/updatehotel/updatehotel.component';
+import { ViewplaceComponent } from './pages/admin/viewplace/viewplace.component';
+import { AddplaceComponent } from './pages/admin/addplace/addplace.component';
+import { UpdateplaceComponent } from './pages/admin/updateplace/updateplace.component';
+import { ViewuserhotelComponent } from './pages/user/viewuserhotel/viewuserhotel.component';
+import { ViewuserplaceComponent } from './pages/user/viewuserplace/viewuserplace.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    SignupComponent,
+    LoginComponent,
+    HomeComponent,
+    DashboardComponent,
+    UserDashboardComponent,
+    ProfileComponent,
+    SidebarComponent,
+    WelcomeComponent,
+    ViewschoolComponent,
+    ViewuserschoolComponent,
+    AddschoolComponent,
+    UpdateschoolComponent,
+    UsersidebarComponent,
+    ViewhotelComponent,
+    AddhotelComponent,
+    UpdatehotelComponent,
+    ViewplaceComponent,
+    AddplaceComponent,
+    UpdateplaceComponent,
+    ViewuserhotelComponent,
+    ViewuserplaceComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    HttpClientModule,
+    MatSnackBarModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatTableModule,
+  ],
+  providers: [authInterceptorProviders],
+  bootstrap: [AppComponent],
+})
+export class AppModule { }
