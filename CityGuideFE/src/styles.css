@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background: #E3F2FD;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.text-center{
+    text-align: center;
+}
+
+.ml20{
+    margin-left: 20px !important;
+}
+.mr20{
+    margin-right: 20px !important;
+}
+.mt20{
+    margin-top: 20px !important;
+}
+.mb20{
+    margin-bottom: 20px !important;
+}
+
+.ml10{
+    margin-left: 10px !important;
+}
+.mr10{
+    margin-right: 10px !important;
+}
+.mt10{
+    margin-top: 10px !important;
+}
+.mb10{
+    margin-bottom: 10px !important;
+}
+#viewtable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: bold;
+}
+  
+#viewtable td, #viewtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+#viewtable tr:nth-child(even){background-color: #f2f2f2;}
+  
+#viewtable tr:hover {color: #030303; background-color: #98a7f8;}
+  
+a:hover {color: orangered;}
+  
+#viewtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: blueviolet;
+    color: white;
+}
+  
+#r1 {
+    background-color: #3f51b5;
+    color: white;
+    font-weight: bolder;
+}
+
+.bh:hover {
+    letter-spacing:2px;
+    font-weight: bolder;
+    box-shadow: 0 0 18px rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.w100{
+    width: 100%;
+}
