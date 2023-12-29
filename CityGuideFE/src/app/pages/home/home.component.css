@@ -1,0 +1,25 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #3f51b5;
+    color: black;
+  }
+  .card:hover {
+    box-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 5px #3f51b5, 0 0 7px #3f51b5,
+    0 0 10px #3f51b5, 0 0 12px #3f51b5;
+  -webkit-animation: blink 0.7s infinite alternate;
+  animation: blink 0.7s infinite alternate;
+    padding: 16px;
+    text-align: center;
+    background-color: #E3F2FD;
+    color: #3f51b5;
+  }
+  
+  .fa {font-size:50px;}
+
+  .sb{
+    text-shadow: 0 0 20px white, 0 0 30px white;
+    font-weight: bold;
+    color: black;
+  }

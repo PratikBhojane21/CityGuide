@@ -1,0 +1,32 @@
+<mat-card >
+    <mat-action-list>
+        <div mat-subheader>Menu</div>
+        <button mat-list-item routerLink="/admin">
+            <mat-icon mat-list-icon>home</mat-icon>Home
+        </button>
+        <button mat-list-item routerLink="/admin/profile">
+            <mat-icon mat-list-icon>account_circle</mat-icon>Profile
+        </button>
+        <button mat-list-item routerLink="/admin/school">
+            <mat-icon mat-list-icon>school</mat-icon>School/Colleges
+        </button>
+        <button mat-list-item routerLink="/admin/addschool">
+            <mat-icon mat-list-icon>history_edu</mat-icon>Add School/Colleges
+        </button>
+        <button mat-list-item routerLink="/admin/hotel">
+            <mat-icon mat-list-icon>hotel</mat-icon>Hotels
+        </button>
+        <button mat-list-item routerLink="/admin/addhotel">
+            <mat-icon mat-list-icon>add_home_work</mat-icon>Add Hotels
+        </button>
+        <button mat-list-item routerLink="/admin/place">
+            <mat-icon mat-list-icon>location_on</mat-icon>Tourist Place
+        </button>
+        <button mat-list-item routerLink="/admin/addplace">
+            <mat-icon mat-list-icon>add_location_alt</mat-icon>Add Tourist Place
+        </button>
+        <button mat-list-item *ngIf="isLoggedIn" (click)="logout()"><mat-icon mat-list-icon>logout</mat-icon>
+            LogOut
+        </button>
+    </mat-action-list>
+</mat-card>

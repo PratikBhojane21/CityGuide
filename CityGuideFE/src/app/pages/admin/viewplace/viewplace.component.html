@@ -1,0 +1,14 @@
+<mat-card class="mt20">
+    <mat-list>
+        <div mat-subheader>Places</div>
+        <mat-list-item *ngFor="let n of place">
+            <mat-icon mat-list-icon>location_on</mat-icon>
+            <div mat-line>{{n.placeName}}</div>
+            <div mat-line>{{n.placeAddress}}</div>
+            <div mat-line><a href="{{n.placeWebsite}}">{{n.placeWebsite}}</a></div>
+            <div><button mat-raised-button (click)="deletePlace(n.tid)"><mat-icon color="warn">delete</mat-icon> Delete</button></div>
+            <div><button mat-raised-button class="ml10" [routerLink]="'/admin/place/'+n.tid"><mat-icon color="primary">upgrade</mat-icon> Update</button></div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</mat-card>

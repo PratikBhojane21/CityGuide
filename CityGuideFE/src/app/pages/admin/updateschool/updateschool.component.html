@@ -1,0 +1,33 @@
+<mat-card class="mt20">
+    <h1>Update School/College</h1>
+    <!-- {{school | json}} -->
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form *ngIf="school" (ngSubmit)="updateSchool()" action="">
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>School/College Name</mat-label>
+                            <input required autofocus type="text" class="schoolName" matInput placeholder="Enter here" [(ngModel)]="school.schoolName" name="schoolName">
+                        </mat-form-field>
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>University Name</mat-label>
+                            <input type="text" class="universityName" matInput placeholder="Enter here" [(ngModel)]="school.universityName" name="universityName">
+                        </mat-form-field>
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>Address</mat-label>
+                            <input required type="text" class="sAddress" matInput placeholder="Enter here" [(ngModel)]="school.sAddress" name="sAddress">
+                        </mat-form-field>
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>Website</mat-label>
+                            <input type="text" class="sWebsite" matInput placeholder="Enter here" [(ngModel)]="school.sWebsite" name="sWebsite">
+                        </mat-form-field>
+                        <div class="container text-center mt15">
+                            <button mat-raised-button color="primary">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

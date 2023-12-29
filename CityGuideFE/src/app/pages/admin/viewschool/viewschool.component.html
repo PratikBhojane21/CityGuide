@@ -1,0 +1,15 @@
+<mat-card class="mt20">
+    <mat-list>
+        <div mat-subheader>School/Colleges</div>
+        <mat-list-item *ngFor="let n of school">
+            <mat-icon mat-list-icon>school</mat-icon>
+            <div mat-line>{{n.schoolName}}</div>
+            <div mat-line>{{n.universityName}}</div>
+            <div mat-line>{{n.sAddress}}</div>
+            <div mat-line><a href="{{n.sWebsite}}">{{n.sWebsite}}</a></div>
+            <div><button mat-raised-button (click)="deleteSchool(n.sid)"><mat-icon color="warn">delete</mat-icon> Delete</button></div>
+            <div><button mat-raised-button class="ml10" [routerLink]="'/admin/school/'+n.sid"><mat-icon color="primary">upgrade</mat-icon> Update</button></div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</mat-card>

@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>location_city</mat-icon>
+    </a>
+    <span style="font-weight: 900px;">City Guide</span>
+    <span class="example-spacer"></span>
+    <a *ngIf="!isLoggedIn" routerLink="/login" mat-icon-button class="example-icon favorite-icon mr20" aria-label="Example icon-button with heart icon">
+      Login
+    </a>
+    <a *ngIf="!isLoggedIn" routerLink="/signup" mat-icon-button class="example-icon mr20" aria-label="Example icon-button with share icon">
+      Register
+    </a>
+    <button *ngIf="isLoggedIn && user" style="margin-right: 40px;" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      {{login.getUser().email}}
+    </button>
+    <a ngClass="mr20" *ngIf="isLoggedIn" style="margin-left: 60px;" (click)="logout()" mat-icon-button class="example-icon mr20" aria-label="Example icon-button with share icon">
+      LogOut
+    </a>
+    
+  </mat-toolbar>
+  

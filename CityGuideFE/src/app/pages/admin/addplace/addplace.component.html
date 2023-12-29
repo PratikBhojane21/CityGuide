@@ -1,0 +1,30 @@
+<mat-card class="mt20">
+    <h1>Add new Place</h1>
+    <!-- {{school | json}} -->
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <form (ngSubmit)="formSubmit()" action="">
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>Place Name</mat-label>
+                            <input required autofocus type="text" class="placeName" matInput placeholder="Enter here" [(ngModel)]="place.placeName" name="placeName">
+                        </mat-form-field>
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>Address</mat-label>
+                            <input required type="text" class="placeAddress" matInput placeholder="Enter here" [(ngModel)]="place.placeAddress" name="placeAddress">
+                        </mat-form-field>
+                        <mat-form-field class="w100" appearance="outline">
+                            <mat-label>Website</mat-label>
+                            <input type="text" class="placeWebsite" matInput placeholder="Enter here" [(ngModel)]="place.placeWebsite" name="placeWebsite">
+                        </mat-form-field>
+                        <div class="container text-center mt15">
+                            <button class="bh" mat-raised-button color="primary">Add</button>
+                            <button class="ml20 bh" type="reset" mat-raised-button color="accent">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

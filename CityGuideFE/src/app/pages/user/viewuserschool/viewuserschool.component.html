@@ -1,0 +1,23 @@
+<mat-card class="mt20">
+    <mat-list>
+        <div mat-subheader>School/Colleges</div>
+        <table id="viewtable">
+            <thead>
+                <tr id="r1">
+                    <td>School/College Name</td>
+                    <td>University Name</td>
+                    <td>Address</td>
+                    <td>Website</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let n of school">
+                    <td>{{n.schoolName}}</td>
+                    <td>{{n.universityName}}</td>
+                    <td>{{n.sAddress}}</td>
+                    <td><a href="{{n.sWebsite}}">{{n.sWebsite}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-list>
+</mat-card>
